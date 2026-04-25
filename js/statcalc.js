@@ -1764,7 +1764,7 @@ function loadBuild(profession) {
 
 
 function createLink() {
-    var ilink = "http://gw2power.com/?builds=";
+    var ilink = "https://impieyay.github.io/GW2Power/?builds=";
     var professionSelected = false;
     for (i = 0; i < 9; i++) {
         if (document.getElementById("create_" + professions[i].toLowerCase()).checked) {
@@ -1863,9 +1863,9 @@ function openLink(link) {
     var goto = (document.getElementById(link).value)
     if (goto != "")
     {
-        if (goto.indexOf('http://') < 0)
+        if (goto.indexOf('https://') < 0)
         {
-            goto = "http://" + goto;
+            goto = "https://" + goto;
         }
         window.open(goto, "_blank");
     }
